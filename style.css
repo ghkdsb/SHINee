@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+/*==============RESET==============*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a {
+    text-decoration:none;
+}
+ul {
+    list-style:none;
+}
+#wrap {
+    width:100%;
+    height:100%;
+}
+
+
+/*============header==================*/
+.header {
+    margin-top:1%;
+}
+
+.header {
+    position:fixed;
+    top:2.5%;
+    left:70%;
+    transform:translate(-7%, -50%);
+    display:flex;
+    z-index:100;
+}
+
+.button {
+    display:inline-block;
+    margin:8.3%;
+}
+
+.button img {
+    width:166%;
+    transition:filter 0.1s ease;
+}
+
+.button img:hover {
+    filter:brightness(150%);
+}
+
+.button img:active {
+    filter:brightness(130%);
+}
+
+/*==============CONTAINER==============*/
+#container {
+    width:100%;
+    min-height: 100vh;
+    background:rgb(255, 204, 217);
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 배치 */
+    min-height: 100vh; /* 화면 전체 높이를 채움 */
+}
+.main img {
+    position:absolute;
+    width:100%;
+}
+.member img {
+    position:absolute;
+    width:100%;
+    z-index:4;
+}
+
+.scroll img {
+    position:absolute;
+    top:88%;
+    left:36%;
+    width:30%;
+    transition:transform 0.3s ease;
+    animation:fade 0.8s infinite;
+    z-index:10;
+}
+@keyframes fade {
+    0% {opacity:0%;}
+    100% {opacity:100%;}
+}
+
+.sparkle img {
+    position:absolute;
+    width:100%;
+    z-index:2;
+    filter:contrast(170%);
+}
+.heart img {
+    position:absolute;
+    width:100%;
+    z-index:3;
+    animation:move 1s 1s linear forwards infinite;
+}
+@keyframes move {
+    0% {top:5%; opacity:100%;}
+    100% {top:-7.5%; opacity:0%;}
+}
+
+/* 인삿말 */
+.desc {
+    position:relative;
+    margin:80% auto;
+    text-align:center;
+    font-size:520%;
+    font-weight:bold;
+    font-family:"Single Day", cursive;
+    color: rgb(255, 205, 218);
+    -webkit-text-stroke: 2px rgb(222, 38, 84);
+}
+.desc2 {
+    position:relative;
+    margin:35% auto;
+    text-align:center;
+    font-size:520%;
+    font-weight:bold;
+    font-family:"Single Day", cursive;
+    color: rgb(255, 205, 218);
+    -webkit-text-stroke: 2px rgb(222, 38, 84);
+}
+.desc3 {
+    position:relative;
+    top:200px;
+    left:10%;
+    margin:0 auto;
+    text-align:center;
+    font-size:520%;
+    font-weight:bold;
+    font-family: "Doto", sans-serif;
+    color: rgb(255, 205, 218);
+    -webkit-text-stroke: 2px rgb(222, 38, 84);
+}
+.desc4 {
+    position:relative;
+    top:400px;
+    left:23%;
+    margin:0 auto;
+    text-align:center;
+    font-size:235%;
+    font-weight:bold;
+    font-family:"Single Day", cursive;
+    color: rgb(180, 0, 126);
+}
+.desc5 {
+    position:relative;
+    top:450px;
+    left:11%;
+    margin:0 auto;
+    text-align:center;
+    font-size:235%;
+    font-weight:bold;
+    font-family:"Single Day", cursive;
+    color: rgb(180, 0, 126);
+}
+.mainmember {
+    position:relative;
+    top:500%;
+    left:9%;
+}
+
+
+
+
+
+/*================================  f5  ================================*/
+/*.memberselect {
+    position:relative;
+    display:inline-block;
+    top:1%;
+    left:83%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    z-index:9;
+}*/
+.card {
+    position:absolute;
+    top:15%;
+    left:2%;
+    width:32%;
+    max-width:100%;
+}
+.card img {
+    position:absolute;
+    width:100%;
+    transition:filter 0.1s ease;
+}
+.card .grayscale {
+    top:30%;
+    opacity: 1;
+} 
+.card .color {
+    top:30%;
+    opacity: 0;
+}
+.card:hover .grayscale {
+    top:30%;
+    opacity: 0;
+}
+.card:hover .color {
+    top:30%;
+    opacity: 1;
+}
+
+.card2 {
+    position:absolute;
+    top:16.5%;
+    left:30%;
+    width:38%;
+    max-width:100%;
+}
+.card2 img {
+    position:absolute;
+    width:100%;
+    transition:filter 0.1s ease;
+}
+.card2 .grayscale {
+    top:30%;
+    opacity: 1;
+} 
+.card2 .color {
+    top:30%;
+    opacity: 0;
+}
+.card2:hover .grayscale {
+    top:30%;
+    opacity: 0;
+}
+.card2:hover .color {
+    top:30%;
+    opacity: 1;
+}
+.card3 {
+    position:absolute;
+    top:15.8%;
+    left:66%;
+    width:32.5%;
+    max-width:100%;
+}
+.card3 img {
+    position:absolute;
+    width:100%;
+    transition:filter 0.1s ease;
+}
+.card3 .grayscale {
+    top:30%;
+    opacity: 1;
+} 
+.card3 .color {
+    top:30%;
+    opacity: 0;
+}
+.card3:hover .grayscale {
+    top:30%;
+    opacity: 0;
+}
+.card3:hover .color {
+    top:30%;
+    opacity: 1;
+}
+.card4 {
+    position:absolute;
+    top:52.5%;
+    left:2.5%;
+    width:48.5%;
+    max-width:100%;
+}
+.card4 img {
+    position:absolute;
+    width:100%;
+    transition:filter 0.1s ease;
+}
+.card4 .grayscale {
+    top:30%;
+    opacity: 1;
+} 
+.card4 .color {
+    top:30%;
+    opacity: 0;
+}
+.card4:hover .grayscale {
+    top:30%;
+    opacity: 0;
+}
+.card4:hover .color {
+    top:30%;
+    opacity: 1;
+}
+.card5 {
+    position:absolute;
+    top:52.8%;
+    left:48%;
+    width:50%;
+    max-width:100%;
+}
+.card5 img {
+    position:absolute;
+    width:100%;
+    transition:filter 0.1s ease;
+}
+.card5 .grayscale {
+    top:30%;
+    opacity: 1;
+} 
+.card5 .color {
+    top:30%;
+    opacity: 0;
+}
+.card5:hover .grayscale {
+    top:30%;
+    opacity: 0;
+}
+.card5:hover .color {
+    top:30%;
+    opacity: 1;
+}
+
+.f5select img{   /*골라보세요 이미지*/
+    position:absolute;
+    top:6%;
+    left:30%;
+    width:40%;
+    transition:transform 0.3s ease;
+    animation:fade 0.8s infinite;
+    max-width:100%;
+}
+
+.memberselect {   /*5개 멤버 만화칸*/
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+}
+.memberf5 {   /*멤버소개창 통합*/
+    margin:5%;
+}
+.f5slide {   /*멤버소개창*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f5slide img {
+    position:absolute;
+    width:100%;
+}
+
+.membermemberf5 {   /*멤버소개 인덱스 통합*/
+    margin-top:1%;
+}
+
+.membermemberf5 {
+    position:fixed;
+    flex-direction:column;
+    top:23.5%;
+    left:-11%;
+    transform:translate(-7%, -50%);
+    display:flex;
+    z-index:15;
+}
+
+.f5index {    /*멤버소개 인덱스*/
+    display:flex;
+    margin:2%;
+}
+
+.f5index img {
+    width:90%;
+    z-index:20;
+}
+
+.f5index img:hover {
+    transform: translateX(73%);
+}
+html {
+    scroll-behavior: smooth; /* 모든 페이지에서 부드러운 스크롤 활성화 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+
+/*==============================    music    ==============================*/
+
+
+.membermusic {   /*멤버소개창 통합*/
+    margin:5%;
+}
+.musicslide {   /*멤버소개창*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.musicslide img {
+    position:absolute;
+    width:100%;
+}
+
+.membermembermusic {   /*멤버소개 인덱스 통합*/
+    margin-top:1%;
+}
+
+.membermembermusic {
+    position:fixed;
+    flex-direction:column;
+    top:50%;
+    left:6.5%;
+    transform:translate(-7%, -50%);
+    display:flex;
+    z-index:15;
+}
+
+.musicindex img {
+    width: 90%;
+    z-index: 20;
+}
+
+.musicindex img:hover {
+    filter:brightness(120%);
+}
+.musicindex img:active {
+    filter:brightness(110%);
+}
+
+.backgroundmusic1 {
+    position:absolute;
+    top:55%;
+    left:29%;
+    z-index:18;
+}
+.backgroundmusic2 {
+    position:absolute;
+    top:155%;
+    left:29%;
+    z-index:18;
+}
+.backgroundmusic3 {
+    position:absolute;
+    top:255%;
+    left:29%;
+    z-index:18;
+}
+.backgroundmusic4 {
+    position:absolute;
+    top:355%;
+    left:29%;
+    z-index:18;
+}
+.backgroundmusic5 {
+    position:absolute;
+    top:455%;
+    left:29%;
+    z-index:18;
+}
+
+.lyrics {
+    position:absolute; /* 자식 요소들이 absolute로 배치될 수 있도록 설정 */
+    width: 100%;
+    height: 700px;
+}
+.article1, .article2, .article3, .article4, .article5 {
+    position:absolute;
+    width:20%;
+    height:40%;
+    border:1px solid #da2961;
+    overflow-y:auto;
+    box-shadow:2px 2px 5px 1px rgb(255, 137, 162);
+}
+.article1 {
+    top: 47%;
+    left: 65.5%; /* 첫 번째 article 위치 */
+}
+
+.article2 {
+    top: 180%;
+    left: 65.5%; /* 두 번째 article 위치 (왼쪽으로 220px 떨어짐) */
+}
+
+.article3 {
+    top: 314%;
+    left: 65.5%; /* 세 번째 article 위치 (위에서 220px 떨어짐) */
+}
+
+.article4 {
+    top: 447%;
+    left: 65.5%; /* 네 번째 article 위치 */
+}
+
+.article5 {
+    top: 580%;
+    left: 65.5%; /* 네 번째 article 위치 */
+}
+
+::-webkit-scrollbar {
+    width:5px;
+}
+::-webkit-scrollbar-track {
+    background:rgb(212, 35, 91);
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(255, 233, 239);
+    border-radius:12px;
+    border:1px solid rgb(255, 233, 239);
+}
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(255, 186, 206);
+    border:1px solid rgb(255, 186, 206);
+}
+
+
+
+/*============================== footer =================================*/
+footer {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:30%;
+    background:rgb(255, 204, 217);
+    padding:0 16px;
+    margin-top: auto;
+}
